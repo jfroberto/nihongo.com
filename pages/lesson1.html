@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 1</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div class="menu-bar">
+    <ul>
+        <li><a href="../index.html"><i class="fa fa-home"></i>Home</a></li>
+        <li  class="active"><a href="#"><i class="fa fa-book"></i>Lecture</a>
+            <div class="sub-menu-1">
+                <ul>
+                    <li><a href="/pages/book1.html"> Minna No Nihongo Book 1</a></li>
+                    <li><a href=""> Minna No Nihongo Book 2 </a></li>
+                </ul>
+            </div>
+        </li>
+        <li><a href=""><i class="fa fa-gamepad"></i>Games</a>
+            <div class="sub-menu-1">
+                <ul>
+                    <li><a href=""> CrossWord </a></li>
+                    <li><a href="/pages/game1.html"> Memory </a></li>
+                    <li><a href=""> Gramar </a></li>
+                </ul>
+            </div>
+        </li>
+        <li><a href=""><i class="fa fa-user"></i>About</a>
+            <div class="sub-menu-1">
+                <ul>
+                    <li><a href=""> Engr.Juan </a></li>
+                    <li><a href=""> Discalimer </a></li>
+                </ul>
+            </div>
+        </li>
+    </ul>
+</div>
+
+
+
+
+<div class = "lesson">
+    <br>
+    <h1>Lesson 1</h1>
+    <br>
+    <button class = "tablinks" onclick = "window.location.href = '../pages/book1.html'" ><i class="fa fa-home"></i>Back</button> <br>
+    <button class = "tablinks" onclick = "openThis(event,'Vocabulary')"><i class="fa fa-home"></i>Vocabulary</button><br>
+    <button class = "tablinks" onclick = "openThis(event,'Grammar')"><i class="fa fa-home"></i>Grammar</button><br>
+    <button class = "tablinks" onclick = "openThis(event,'Conversation')"><i class="fa fa-home"></i>Conversation</button><br>
+    <button class = "tablinks" onclick = "openThis(event,'Games')"><i class="fa fa-home"></i>Test</button><br>
+</div>
+
+<div id="lesson" class="tabcontent" style="display: block"> <h1>In this chapter you will Learn how to introduce your self and tell... sore de ha hajimemashou </h1> </div>
+
+<div id="Vocabulary" class="tabcontent">
+    <h3>Vocabulary</h3>
+
+        <table class="vocabTable">
+            <tr>
+                <th>N0</th>
+                <th>Word</th>
+                <th>Kanji</th>
+                <th>Meaning</th>
+                <th>Sound</th>
+            </tr>
+           
+            <tr>	<td>	1	</td>	<td>	わたし	</td>	<td>	私	</td>	<td>	I	</td>	<td><audio id= "myAudio"><source src="/sound/1Kotoba.mp3" type="audio/mpeg"/></audio><button onclick="playAudio()" type="button">Play</button></td>	</tr>
+                <tr>	<td>	2	</td>	<td>	わたしたち	</td>	<td>	私たち	</td>	<td>	We	</td>	<td><audio id= "myAudio"><source src="/sound/1Kotoba.mp3" type="audio/mpeg"></audio><button onclick="playAudio()" type="button">Play</button></td>	</tr>
+                <tr>	<td>	3	</td>	<td>	あなた	</td>	<td>		</td>	<td>	You	</td>	<td><audio id= "myAudio"><source src="/sound/1Kotoba.mp3" type="audio/mpeg"></audio><button onclick="playAudio()" type="button">Play</button></td>	</tr>
+                <tr>	<td>	4	</td>	<td>	あのひと	</td>	<td>	あの人	</td>	<td>	tdat person	</td>	<td><audio id= "myAudio"><source src="/sound/1Kotoba.mp3" type="audio/mpeg"></audio><button onclick="playAudio()" type="button">Play</button></td>	</tr>
+                <tr>	<td>	5	</td>	<td>	あのかた	</td>	<td>	あの方	</td>	<td>	Polite equivalent of あのひと	</td>	<td><audio id= "myAudio"><source src="/sound/1Kotoba.mp3" type="audio/mpeg"></audio><button onclick="playAudio()" type="button">Play</button></td>	</tr>
+                <tr>	<td>	6	</td>	<td>	みなさん	</td>	<td>		</td>	<td>	Everybody, all of you	</td>	<td><audio id= "myAudio"><source src="/sound/1Kotoba.mp3" type="audio/mpeg"></audio><button onclick="playAudio()" type="button">Play</button></td>	</tr>
+                <tr>	<td>	7	</td>	<td>	～さん	</td>	<td>		</td>	<td>	Mr./Mrs. Title of respect added to a name	</td>	<td><audio id= "myAudio"><source src="/sound/1Kotoba.mp3" type="audio/mpeg"></audio><button onclick="playAudio()" type="button">Play</button></td>	</tr>
+                <tr>	<td>	8	</td>	<td>	～ちゃん	</td>	<td>		</td>	<td>	Suffix added to child’s names instead of ～さん	</td>	<td><audio id= "myAudio"><source src="/sound/1Kotoba.mp3" type="audio/mpeg"></audio><button onclick="playAudio()" type="button">Play</button></td>	</tr>
+                <tr>	<td>	9	</td>	<td>	～くん	</td>	<td>		</td>	<td>	Suffix often added to boy’s names	</td>	<td><audio id= "myAudio"><source src="/sound/1Kotoba.mp3" type="audio/mpeg"></audio><button onclick="playAudio()" type="button">Play</button></td>	</tr>
+                <tr>	<td>	10	</td>	<td>	～じん	</td>	<td>	～人	</td>	<td>	Suffix meaning nationality	</td>	<td><audio id= "myAudio"><source src="/sound/1Kotoba.mp3" type="audio/mpeg"></audio><button onclick="playAudio()" type="button">Play</button></td>	</tr>
+                <tr>	<td>	11	</td>	<td>	せんせい	</td>	<td>	先生	</td>	<td>	Teacher, instructor ( not used when referring to one’s own job)	</td>	<td><audio id= "myAudio"><source src="/sound/1Kotoba.mp3" type="audio/mpeg"></audio><button onclick="playAudio()" type="button">Play</button></td>	</tr>
+                <tr>	<td>	12	</td>	<td>	きょうし	</td>	<td>	教師	</td>	<td>	Teacher, instructor	</td>	<td><audio id= "myAudio"><source src="/sound/1Kotoba.mp3" type="audio/mpeg"></audio><button onclick="playAudio()" type="button">Play</button></td>	</tr>
+                <tr>	<td>	13	</td>	<td>	がくせい	</td>	<td>	学生	</td>	<td>	Student	</td>	<td><audio id= "myAudio"><source src="/sound/1Kotoba.mp3" type="audio/mpeg"></audio><button onclick="playAudio()" type="button">Play</button></td>	</tr>
+                <tr>	<td>	14	</td>	<td>	かいしゃいん	</td>	<td>	会社員	</td>	<td>	company employee	</td>	<td><audio id= "myAudio"><source src="/sound/1Kotoba.mp3" type="audio/mpeg"></audio><button onclick="playAudio()" type="button">Play</button></td>	</tr>
+                <tr>	<td>	15	</td>	<td>	しゃいん	</td>	<td>	社員	</td>	<td>	employee of…company (used witd a company’s name)	</td>	<td><audio id= "myAudio"><source src="/sound/1Kotoba.mp3" type="audio/mpeg"></audio><button onclick="playAudio()" type="button">Play</button></td>	</tr>
+                <tr>	<td>	16	</td>	<td>	ぎんこういん	</td>	<td>	銀行員	</td>	<td>	bank employee	</td>	<td><audio id= "myAudio"><source src="/sound/1Kotoba.mp3" type="audio/mpeg"></audio><button onclick="playAudio()" type="button">Play</button></td>	</tr>
+                <tr>	<td>	17	</td>	<td>	いしゃ	</td>	<td>	医者	</td>	<td>	medical doctor	</td>	<td><audio id= "myAudio"><source src="/sound/1Kotoba.mp3" type="audio/mpeg"></audio><button onclick="playAudio()" type="button">Play</button></td>	</tr>
+                <tr>	<td>	18	</td>	<td>	けんきゅうしゃ	</td>	<td>	研究者	</td>	<td>	researcher, scholar	</td>	<td><audio id= "myAudio"><source src="/sound/1Kotoba.mp3" type="audio/mpeg"></audio><button onclick="playAudio()" type="button">Play</button></td>	</tr>
+                <tr>	<td>	19	</td>	<td>	エンジニア	</td>	<td>		</td>	<td>	engineer	</td>	<td><audio id= "myAudio"><source src="/sound/1Kotoba.mp3" type="audio/mpeg"></audio><button onclick="playAudio()" type="button">Play</button></td>	</tr>
+                <tr>	<td>	20	</td>	<td>	だいがく	</td>	<td>	大学	</td>	<td>	university	</td>	<td><audio id= "myAudio"><source src="/sound/1Kotoba.mp3" type="audio/mpeg"></audio><button onclick="playAudio()" type="button">Play</button></td>	</tr>
+                <tr>	<td>	21	</td>	<td>	びょういん	</td>	<td>	病院	</td>	<td>	hospital	</td>	<td><audio id= "myAudio"><source src="/sound/1Kotoba.mp3" type="audio/mpeg"></audio><button onclick="playAudio()" type="button">Play</button></td>	</tr>
+                <tr>	<td>	22	</td>	<td>	でんき	</td>	<td>	電気	</td>	<td>	electricity, light	</td>	<td><audio id= "myAudio"><source src="/sound/1Kotoba.mp3" type="audio/mpeg"></audio><button onclick="playAudio()" type="button">Play</button></td>	</tr>
+                <tr>	<td>	23	</td>	<td>	だれ（どなた）	</td>	<td>	誰	</td>	<td>	who (どなた is tde polite equivalent of だれ)	</td>	<td><audio id= "myAudio"><source src="/sound/1Kotoba.mp3" type="audio/mpeg"></audio><button onclick="playAudio()" type="button">Play</button></td>	</tr>
+                <tr>	<td>	24	</td>	<td>	―さい	</td>	<td>	～歳	</td>	<td>	― years old	</td>	<td><audio id= "myAudio"><source src="/sound/1Kotoba.mp3" type="audio/mpeg"></audio><button onclick="playAudio()" type="button">Play</button></td>	</tr>
+                <tr>	<td>	25	</td>	<td>	なんさい	</td>	<td>	何歳	</td>	<td>	how old (おいくつ is is tde polite equivalent of  なんさい)	</td>	<td><audio id= "myAudio"><source src="/sound/1Kotoba.mp3" type="audio/mpeg"></audio><button onclick="playAudio()" type="button">Play</button></td>	</tr>
+                <tr>	<td>	26	</td>	<td>	はい	</td>	<td>		</td>	<td>	yes	</td>	<td><audio id= "myAudio"><source src="/sound/1Kotoba.mp3" type="audio/mpeg"></audio><button onclick="playAudio()" type="button">Play</button></td>	</tr>
+                <tr>	<td>	27	</td>	<td>	いいえ	</td>	<td>		</td>	<td>	no	</td>	<td><audio id= "myAudio"><source src="/sound/1Kotoba.mp3" type="audio/mpeg"></audio><button onclick="playAudio()" type="button">Play</button></td>	</tr>
+                <tr>	<td>	28	</td>	<td>	しつれいですが	</td>	<td>	失礼ですが	</td>	<td>	Excuse me, but	</td>	<td><audio id= "myAudio"><source src="/sound/1Kotoba.mp3" type="audio/mpeg"></audio><button onclick="playAudio()" type="button">Play</button></td>	</tr>
+                <tr>	<td>	29	</td>	<td>	おなまえは？	</td>	<td>	お名前は	</td>	<td>	May I have your name?	</td>	<td><audio id= "myAudio"><source src="/sound/1Kotoba.mp3" type="audio/mpeg"></audio><button onclick="playAudio()" type="button">Play</button></td>	</tr>
+                <tr>	<td>	30	</td>	<td>	はじめまして。	</td>	<td>	初めて	</td>	<td>	How do you do (lit. I’m meeting you for tde first time. Usually used as tde first phrase when introducing oneself)	</td>	<td><audio id= "myAudio"><source src="/sound/1Kotoba.mp3" type="audio/mpeg"></audio><button onclick="playAudio()" type="button">Play</button></td>	</tr>
+                <tr>	<td>	31	</td>	<td>	どうぞよろしく[おねがいします]。	</td>	<td>	どうぞよろしく「お願いします」。	</td>	<td>	Pleased to meet you. (lit. Please be nice to me. Usually used at tde end of a self-introduction)	</td>	<td><audio id= "myAudio"><source src="/sound/1Kotoba.mp3" type="audio/mpeg"></audio><button onclick="playAudio()" type="button">Play</button></td>	</tr>
+                <tr>	<td>	32	</td>	<td>	こちらは～さんです。	</td>	<td>		</td>	<td>	tdis is Mr./Ms/…	</td>	<td><audio id= "myAudio"><source src="/sound/1Kotoba.mp3" type="audio/mpeg"></audio><button onclick="playAudio()" type="button">Play</button></td>	</tr>
+                <tr>	<td>	33	</td>	<td>	～からきました。	</td>	<td>	～から来ました	</td>	<td>	I came (come) from…	</td>	<td><audio id= "myAudio"><source src="/sound/1Kotoba.mp3" type="audio/mpeg"></audio><button onclick="playAudio()" type="button">Play</button></td>	</tr>
+                <tr>	<td>	34	</td>	<td>	アメリカ	</td>	<td>		</td>	<td>	USA	</td>	<td><audio id= "myAudio"><source src="/sound/1Kotoba.mp3" type="audio/mpeg"></audio><button onclick="playAudio()" type="button">Play</button></td>	</tr>
+                <tr>	<td>	35	</td>	<td>	イギリス	</td>	<td>		</td>	<td>	U.K	</td>	<td><audio id= "myAudio"><source src="/sound/1Kotoba.mp3" type="audio/mpeg"></audio><button onclick="playAudio()" type="button">Play</button></td>	</tr>
+                <tr>	<td>	36	</td>	<td>	インド	</td>	<td>		</td>	<td>	India	</td>	<td><audio id= "myAudio"><source src="/sound/1Kotoba.mp3" type="audio/mpeg"></audio><button onclick="playAudio()" type="button">Play</button></td>	</tr>
+                <tr>	<td>	37	</td>	<td>	インドネシア	</td>	<td>		</td>	<td>	Indonesia	</td>	<td><audio id= "myAudio"><source src="/sound/1Kotoba.mp3" type="audio/mpeg"></audio><button onclick="playAudio()" type="button">Play</button></td>	</tr>
+                <tr>	<td>	38	</td>	<td>	かんこく	</td>	<td>	韓国	</td>	<td>	Korean	</td>	<td><audio id= "myAudio"><source src="/sound/1Kotoba.mp3" type="audio/mpeg"></audio><button onclick="playAudio()" type="button">Play</button></td>	</tr>
+                <tr>	<td>	39	</td>	<td>	タイ	</td>	<td>		</td>	<td>	tdailand	</td>	<td><audio id= "myAudio"><source src="/sound/1Kotoba.mp3" type="audio/mpeg"></audio><button onclick="playAudio()" type="button">Play</button></td>	</tr>
+                <tr>	<td>	40	</td>	<td>	ちゅうごく	</td>	<td>	中国	</td>	<td>	China	</td>	<td><audio id= "myAudio"><source src="/sound/1Kotoba.mp3" type="audio/mpeg"></audio><button onclick="playAudio()" type="button">Play</button></td>	</tr>
+                <tr>	<td>	41	</td>	<td>	ドイツ	</td>	<td>		</td>	<td>	Germany	</td>	<td><audio id= "myAudio"><source src="/sound/1Kotoba.mp3" type="audio/mpeg"></audio><button onclick="playAudio()" type="button">Play</button></td>	</tr>
+                <tr>	<td>	42	</td>	<td>	にほん	</td>	<td>	日本	</td>	<td>	Japan	</td>	<td><audio id= "myAudio"><source src="/sound/1Kotoba.mp3" type="audio/mpeg"></audio><button onclick="playAudio()" type="button">Play</button></td>	</tr>
+                <tr>	<td>	43	</td>	<td>	フランス	</td>	<td>		</td>	<td>	France	</td>	<td><audio id= "myAudio"><source src="/sound/1Kotoba.mp3" type="audio/mpeg"></audio><button onclick="playAudio()" type="button">Play</button></td>	</tr>
+                <tr>	<td>	44	</td>	<td>	ブラジル	</td>	<td>		</td>	<td>	Brazil	</td>	<td><audio id= "myAudio"><source src="/sound/1Kotoba.mp3" type="audio/mpeg"></audio><button onclick="playAudio()" type="button">Play</button></td>	</tr>
+                <tr>	<td>	45	</td>	<td>	さくらだいがく	</td>	<td>	桜大学	</td>	<td>	fictitious university	</td>	<td><audio id= "myAudio"><source src="/sound/1Kotoba.mp3" type="audio/mpeg"></audio><button onclick="playAudio()" type="button">Play</button></td>	</tr>
+                <tr>	<td>	46	</td>	<td>	ふじだいがく	</td>	<td>	富士大学	</td>	<td>	fictitious university	</td>	<td><audio id= "myAudio"><source src="/sound/1Kotoba.mp3" type="audio/mpeg"></audio><button onclick="playAudio()" type="button">Play</button></td>	</tr>
+                <tr>	<td>	 47	</td>	<td>	ＩＭＣ ／ パワーでんき ／ブラジルエアー	</td>	<td>	ＩＭＣ ／ パワー電気／ブラジルエアー	</td>	<td>	fictitious company	</td>	<td><audio id= "myAudio"><source src="/sound/1Kotoba.mp3" type="audio/mpeg"></audio><button onclick="playAudio()" type="button">Play</button></td>	</tr>
+                <tr>	<td>	48	</td>	<td>	ＡＫＣ	</td>	<td>		</td>	<td>	fictitious university	</td>	<td><audio id= "myAudio"><source src="/sound/1Kotoba.mp3" type="audio/mpeg"></audio><button onclick="playAudio()" type="button">Play</button></td>	</tr>
+                <tr>	<td>	49	</td>	<td>	こうべびょういん	</td>	<td>	神戸病院	</td>	<td>	fictitious hospital	</td>	<td><audio id= "myAudio"><source src="/sound/1Kotoba.mp3" type="audio/mpeg"></audio><button onclick="playAudio()" type="button">Play</button></td>	</tr>
+                
+                
+        </table>
+
+
+
+
+
+
+</div>
+
+<div id="Grammar" class="tabcontent">
+ 
+    <div class="grammar-design">
+        <div class="mybox">
+            <h3>1. N1 は N２ です。</h3>
+            <h4>1) Particle は</h4>
+            <p>    The particle は indicates that the word before it is the topic of the sentence. You select a noun you want to talk about, add は to show that it is the topic and give a statement about the topic.</p>
+            <br>        
+            <p>わたしは マイク・ミラーです。</p>
+            <p>I am Mike Miller</p>
+            <p>[Note] The particle は is read わ.</p>
+            <br>
+            <h4>2) です</h4>
+            <p>Nouns used with です work as predicates.</p> 
+            <p>です indicates judgment or assertion.</p> 
+            <p>です also conveys that the speaker is being polite towards the listener.</p> 
+            <p>です inflects when the sentence is negative (see 2. below) or in the past tense (see Lesson 2)</p>
+            <br>
+            <p>わたしは エンジニアです。</p> 
+            <p>I am engineer.</p> 
+        </div>
+        <div class="mybox">
+            <h3>2. N1 は N2  じゃ ありません</h3> 
+            <p>じゃ ありません is the negative form of です. It is the form used in daily conversation. For a formal speech or writting, では ありません is used instead.</p> 
+        
+            <p>サントスさんは 学生 ( がくせい）じゃ ありません。</p> 
+            <p>Mr.Santos is not a student.</p> 
+            <p>[Note] は in では is read わ.</p>
+        </div>
+        <div class="mybox">
+            <h3>3. S か</h3> 
+            <p>1) Particle か</p> 
+            <p>The particle か is used o express the speaker’s doubt, question, uncertainty, etc. A question is formed by simply adding か to the end of the sentence. A question ends with a rising intonation.</p> 
+            <br>
+            <p>2) Questions asking whether a statement is correct or not</p> 
+            <p>As mentioned above, a sentence becomes a question when か is added to the end. The word order does not change. The question thus made asks whether a statement is correct or not. Depending on whether you agree with the statement or not, your answer to such a question begins with はい or いいえ.</p> 
+            <br>
+            <p>ミラーさんは アメリカ陣ですか。</p>
+            <p>Is Mr.Miller an American?</p>
+            <br>
+            <p>…はい、アメリカ人です。</p>
+            <p>… Yes, he is.</p>
+            <br>
+            <p>ミラーさんは 先生 (せんせい) ですか。</p>
+            <p>Is Mr. Miller a teacher?</p>
+        </div>
+        
+            <div class="mybox">
+                <p>…いいえ、先生じゃ ありません。</p>
+            <p>… No, he is not.</p>
+            <br>
+        
+            <p>3) Question with interrogatives</p>
+            <p>An interrogative replaces the part of the sentence that covers what you want to ask about. The word order does not change, and か is added at the end.</p>
+            <br>
+            <p>あの方 (かた）は どなたですか。</p>
+             <p>Who is that man?</p>
+            <br>
+             <p>… [あの 方は] ミラーさんです。</p>
+            <p>… That’s Mr.Miller.</p>
+            </div>
+
+        <div class="mybox">
+            <h3>4. N も</h3>
+            <p>も is added after a topic instead of は when the statement about the topic is the same as the previous topic.</p>
+            <p>ミラーさんは 会社員 (かいしゃいん）です。</p>
+            <p>Mr.Miller is a company employee.</p>
+            <p>グプタさんも 会社員です。</p>
+            <p>Mr.Gupta is also a company employee.</p>            
+        </div>
+        <div class="mybox">
+            <h3> 5. N1 の N2</h3>
+            <p>の is used to connect two nouns. N1 modifies N2 . In Lesson 1, N1 is an organization or some kind of group to which N2 belongs.</p>
+            <p>ミラーさんは IMC の 社員です。</p>
+            <p>Mr.Miller is an IMC employee.</p>
+        </div>
+        <div class="mybox">
+            <h3>6. ～さん</h3>
+            <p>さん is added to the name of the listener or a third person to show the speaker’s respect to the person. It should never be used with the speaker’s own name.</p>
+            <p>あの方は ミラーさんです。</p>
+            <p>That’s Mr.Miller.</p>
+            <p>When referring directly to the listener’s name. The listener’s family name followed by さん is usually used.</p>
+            <p>鈴木 ( すずき): ミラーさんは 学生 (がくせい) ですか。</p>
+            <p>Suzuki             :      Are you a student?</p>
+            <p>ミラー     :      いいえ、会社員 (かいしゃいんです。</p>
+            <p>Miller            :       No, I’m a company employee.</p>
+        </div>
+    
+        <div class="click button">
+            <button class = "prev" onclick="showPrev();">Show Previous</button>
+            <button class = "next" onclick="showNext();">Show Next</button>
+         </div>
+    </div>
+</div>
+
+<div id="Conversation" class="tabcontent">
+    <h3>Conversation</h3>
+    <table class="vocabTable">
+        <tr>
+            <th colspan = "2">Japanese : 初めまして。</th>
+            <th colspan = "2">English : How do you do?</th>
+        </tr>
+        <tr>
+            <td>佐藤</td>
+            <td>おはようございます。</td>
+            <td>sato</td>
+            <td>Good morning.</td>
+        </tr>
+
+        <tr>
+            <td>Yamada:</td>
+            <td>おはようございます。</td>
+            <td>Yamada:</td>
+            <td>Good morning</td>
+        </tr>
+
+        <tr>            
+            <td></td>
+            <td>佐藤さん、こちらはマイク・ミラーです。</td>
+            <td></td>
+            <td>Ms. Sato, this is Mr. Mike Miller</td>
+        </tr>
+
+        <tr>
+            <td>ミラー</td>
+            <td>マイク・ミラーです。</td>
+            <td>Miller:</td>
+            <td>How do you do? I am Mike Miller</td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td>アメリカから来ました。</td>
+            <td></td>
+            <td>I am from the United State of America.</td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td>ぞ宜しく。</td>
+            <td></td>
+            <td>Nice to meet you.</td>
+        </tr>
+        <tr>
+            <td>佐藤</td>
+            <td>佐藤けどういこです。</td>
+            <td>Sato</td>
+            <td>I am Sato Keiko.</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>ぞ宜しく。</td>
+            <td></td>
+            <td>Nice to meet you.</td>
+        </tr>
+            <tr>
+            <td><audio id= "myAudio"> <source src="/sound/1Kaiwa.mp3"/> </audio><button onclick="playAudio()" type="button">Play</button> <button onclick="pauseAudio()" type="button">Pause</button> </td>
+            </tr>
+    </table>
+
+
+
+    
+</div>
+
+<div id="Games" class="tabcontent">
+    <h3>Games</h3>
+    <button  onclick = "window.location.href = '/game.html'">Button</button>
+    <p>About</p>
+
+    <iframe width="100%" height="550" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSBcfhWOg4XWr19xjx4x1PJ0ayatBwJDW8ZEtcmgi9ih557EqyXW3mesfPm0fH_26w6tOYcZPr1dY_t/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"></iframe>   
+    <iframe width="100%" height="550" src="https://docs.google.com/document/d/e/2PACX-1vRYYkOAUNG5cU-d03Euaf9ddd1F6Y_ruLxqxbcBJJQxBTRnyPi31NHAu3O-Vk3HRm0FHNThcFVQUSuR/pub?embedded=true"></iframe>    
+</div>
+
+
+
+
+<script>
+    var visibleDiv = 0;
+
+    function showDiv(){
+        $(".mybox").hide();
+        $(" .mybox:eq(" + visibleDiv + ")").show();
+    }
+    showDiv();
+
+    function showNext(){
+        if (visibleDiv == $(".mybox").length-1){
+            visibleDiv = 0;
+        }else {
+            visibleDiv++;
+        }
+        showDiv();
+    }
+
+    function showPrev(){
+        if (visibleDiv == 0 ){
+            visibleDiv = $(".mybox").length-1;
+        }else {
+            visibleDiv--;
+        }
+        showDiv();
+    }
+
+</script>
+
+<script src="/js/app.js"></script>
+</body>
+</html>

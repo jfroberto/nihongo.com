@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/game.css">
+    <title>Memory</title>
+</head>
+<body>
+    <div class="quizHome customBox show">
+        <h4>10 seconds to answer the vocabulary</h4>
+        <button class="start button" type="button">Start</button>
+        <button class="mainhtml button" type="button" onclick = "window.location.href = '/index.html'" >Home</button>
+    </div>
+
+    <div class="quizBox customBox">
+        <div class="stats">
+            <div class="quizTime">
+                <div class="remainTime"></div>
+            </div>
+            <div class="score">
+                <span class="scoreText">Score:</span>
+                <span class="correctAnswer"></span>
+            </div>
+        </div>
+        <div class="questionBox">
+            <div class="currentQuestionNumber" >
+                
+            </div>
+            <div class="questionText">
+            
+            </div>
+        </div>
+        <div class="optionBox">
+            
+        </div>
+        <div class="answerDesc">
+            
+        </div>
+        <div class="nextQuestion">
+            <button class= "nextQuestionButton button" type="button">Next</button>
+            <button class= "resultButton button" type="button">Result</button>
+        </div>
+     </div>
+
+
+     <div class="quizOverBox customBox">
+         <h1>Quiz Result</h1>
+         <h4>Total Questions: <span class="totalQuestions"></span></h4>
+         <h4>Attempt: <span class="totalAttempt"></span></h4>
+         <h4>Correct: <span class="totalCorrect"></span></h4>
+         <h4>Wrong: <span class="totalWrong"></span></h4>
+         <h4>Percentage: <span class="percentage"></span></h4>
+         <button class="startAgainQuizButton button" type="button">Start</button>
+         <button class="gotoHomeButton button" type="button">Home</button>
+     </div>
+
+     <script src="/js/game.js"></script>
+</body>
+</html>

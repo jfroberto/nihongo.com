@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+</head>
+<body>
+    
+
+    <div class="container">
+        <div class="table-responsive">
+            <h1>json</h1>
+            <br>
+            <table class="table-bordered table-striped" id="lesson1">
+                <tr>
+                    <th>Word</th>
+                    <th>Kanji</th>
+                    <th>Meaning</th>
+                </tr>
+
+            </table>
+
+        </div>
+    </div>
+
+
+<div id="audioplay">
+<audio id='audio1' src="/sound/1Kotoba.mp3" type="audio/wav" preload="auto" autobuffer controls ></audio>
+<audio id='audio2' src="/sound/1Kaiwa.mp3" type="audio/wav" preload="auto" autobuffer controls></audio>
+<button id='playaudio' onclick='playAudio()'>Play Audio</input>
+
+
+
+    <button class = "tablinks" onclick = "window.location.href = '/sound/1Kaiwa.mp3'" ><i class="fa fa-home"></i>Back</button> <br>
+
+
+    <a href="/sound/1Kaiwa.mp3" data-component="link" data-source="inlineLink" data-type="externalLink" data-ordinal="2">あ</a>
+
+
+
+    <script>
+        function playAudio(){
+    var audio1 = document.getElementById('audio1');
+    var audio2 = document.getElementById('audio2');
+    audio1.play();
+    audio2.play();
+}
+
+    </script>
+
+
+
+
+
+    <script>
+        $(document).ready(function(){
+            $.getJSON("lesson1.json", function(data){
+                var vocab = '';
+                $.each(data, function (key, value){
+                    vocab += '<tr>';
+                    vocab += '<td>'+value.word+'</td>';
+                    vocab += '<td>'+value.kanji+'</td>';
+                    vocab += '<td>'+value.meaning+'</td>';
+                    vocab += '<td>'+value.audio+'</td>';
+                    vocab += '</tr>';
+                });
+                $('#lesson1').append(vocab);
+            });
+        });
+        
+        </script>
+</body>
+</html>

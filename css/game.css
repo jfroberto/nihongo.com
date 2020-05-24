@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700;900&display=swap');
+body{
+    margin: 0;
+    background-image: url("/images/wallpaper3.jpg");
+    background-attachment: fixed;
+    background-size: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.customBox {
+    max-width: 800px;
+    background-color: grey;
+    margin: 30px auto;
+    padding: 50px 40px;
+    border-radius: 10px;
+}
+
+.quizHome {
+    text-align: center;
+    display: none;
+}
+
+.quizHome.show {
+    display: block;
+    animation: fadeInRight 1s ease;
+}
+
+.quizHome h4{
+    font-size: 30px;
+    font-weight: 400;
+    color:black;
+    margin: 0 0 30px;
+}
+
+.button{
+    background-color: #233142;
+    border: 2px solid #b96502;
+    padding: 14px 40px;
+    color: #ffffff;
+    font-size: 20px;
+    border-radius: 10px;
+    font-family: 'Source Sans Pro', sans-serif;
+    cursor: pointer;
+    white-space: nowrap;
+    margin: 0 10px;
+}
+
+.quizBox {
+    background-color: cadetblue;
+    display: none;
+}
+.quizBox.show {
+    display: block;
+    animation: fadeInRight 1s ease;
+}
+
+
+.quizBox .stats{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.quizBox .stats .quizTime{
+    flex-basis: calc(50% - 20px);
+    max-width: calc(50% - 20px);
+    /*background-color: red;*/
+    text-align: left;
+}
+
+.quizBox .stats .quizTime .remainTime {
+    height: 60px;
+    width: 60px;
+    color: green;
+    border: 2px solid green;
+    font-weight: 800;
+    line-height: 56px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.quizBox .stats .quizTime .remainTime.lesstime{
+    color: red;
+    border-color: red;
+}
+
+.quizBox .stats .score{
+    flex-basis: calc(50% - 20px);
+    max-width: calc(50% - 20px);
+    /*background-color: blue;*/
+    text-align: right;
+} 
+
+
+.quizBox .stats .score .correctAnswer{
+    font-weight: 800;
+
+}
+
+.quizBox .questionBox {
+    background-color: #ffffff;
+    padding: 40px 30px;
+    margin-top: 40px;
+    border-radius: 10px;
+    border: 2px solid red;
+    text-align: center;
+    position: relative;
+}
+
+.quizBox .questionBox .currentQuestionNumber {
+    height: 60px;
+    width: 60px;
+    background-color: #ffffff;
+    border: 2px solid #c2af91;
+    font-size: 20px;
+    font-weight: 800;
+    border-radius: 50%;
+    line-height: 55px;
+    text-align: center;
+    position: absolute;
+    top: -30px;
+    z-index: 1;
+
+}
+
+.quizBox .questionBox .questionText {
+    font-size: 28px;
+    font-family: cursive;
+}
+
+.quizBox .optionBox {
+    display: flex;
+    flex-wrap: wrap ;
+    justify-content: space-between;
+   
+}
+
+.quizBox .optionBox .option{
+    background-color: #ffffff;
+    flex-basis: calc(50% - 20px);
+    max-width: calc(50% - 20px);
+    margin-top: 30px;
+    padding: 14px 15px;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 500;
+    border: 2px solid red;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.quizBox .optionBox .option.alreadyAnswered{
+    pointer-events: none;
+}
+
+.quizBox .optionBox .option.showCorrect{
+    background-color: lime;
+    border-color: lime;
+    color: #ffffff;
+}
+    
+.quizBox .optionBox .option.correct{
+    background-color: lime;
+    border-color: lime;
+    color: #ffffff;
+}
+
+.quizBox .optionBox .option.wrong{
+    background-color:red;
+    border-color: red;
+    color: #ffffff;
+    animation: shake 1s linear;
+}
+@keyframes shake{
+    0%,20%,30%{
+        transform: translateX(10px);
+    }
+    20%,30%{
+        transform: translateX(-10px);
+    }
+}
+
+.quizBox .answerDesc{
+    background-color: #ffffff;
+    border: 2px solid red;
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    color: black;
+    display: none;
+}
+
+.quizBox .answerDesc.show{
+    display: block;
+    animation: fadeInRight 1s ease;
+}
+
+.quizBox .nextQuestion{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.resultButton, .nextQuestionButton {
+    display: none;
+}
+
+.resultButton.show, .nextQuestionButton.show{
+    display: inline-block;
+    animation: fadeInRight 1s ease;
+}
+
+.resultButton {
+    display: none;
+}
+
+.quizOverBox{
+    text-align: center;
+    display: none;
+}
+
+.quizOverBox.show{
+    display: block;
+    animation: fadeInRight 1s ease;
+}
+
+.quizOverBox h1{
+    font-size: 50px;
+    font-family: cursive;
+    margin: 0 0 30px;
+}
+
+.quizOverBox h4 {
+    font-size: 25px;
+    font-weight: normal;
+    color: black;
+    margin: 15px 0;
+}
+
+.quizOverBox h4 span{
+    font-weight: 800;
+    color: black;
+}
+
+.startAgainQuizButton , .gotoHomeButton{
+    margin-top: 15px;
+}

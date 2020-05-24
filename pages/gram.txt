@@ -1,0 +1,98 @@
+   <div class="les-wrapper"> 
+        
+        <div class="grammar-text">
+            <h3>1. N1 は N２ です。</h3>
+    <h4>1) Particle は</h4>
+    <p>    The particle は indicates that the word before it is the topic of the sentence. You select a noun you want to talk about, add は to show that it is the topic and give a statement about the topic.</p>
+    <br>
+
+    <p>わたしは マイク・ミラーです。</p>
+    <p>I am Mike Miller</p>
+    <p>[Note] The particle は is read わ.</p>
+    <br>
+    <h4>2) です</h4>
+    <p>Nouns used with です work as predicates.</p> 
+    <p>です indicates judgment or assertion.</p> 
+    <p>です also conveys that the speaker is being polite towards the listener.</p> 
+    <p>です inflects when the sentence is negative (see 2. below) or in the past tense (see Lesson 2)</p> 
+
+    <p>わたしは エンジニアです。</p> 
+    <p>I am engineer.</p> 
+    <br>
+        </div>
+        <div class="grammar-text">
+            <h4>2. N1 は N2  じゃ ありません</h4> 
+            <p>じゃ ありません is the negative form of です. It is the form used in daily conversation. For a formal speech or writting, では ありません is used instead.</p> 
+        
+            <p>サントスさんは 学生 ( がくせい）じゃ ありません。</p> 
+            <p>Mr.Santos is not a student.</p> 
+            <p>[Note] は in では is read わ.</p> 
+        <br>
+        </div>
+
+        <div class="grammar-text">
+            <h4>3. S か</h4> 
+            <p>1) Particle か</p> 
+            <p>The particle か is used o express the speaker’s doubt, question, uncertainty, etc. A question is formed by simply adding か to the end of the sentence. A question ends with a rising intonation.</p> 
+            <p>2) Questions asking whether a statement is correct or not</p> 
+            <p>As mentioned above, a sentence becomes a question when か is added to the end. The word order does not change. The question thus made asks whether a statement is correct or not. Depending on whether you agree with the statement or not, your answer to such a question begins with はい or いいえ.</p> 
+        <br>
+            <p>ミラーさんは アメリカ陣ですか。</p>
+            <p>Is Mr.Miller an American?</p>
+        <br>
+        <p>…はい、アメリカ人です。</p>
+        <p>… Yes, he is.</p>
+        <br>
+        <p>ミラーさんは 先生 (せんせい) ですか。</p>
+        <p>Is Mr. Miller a teacher?</p>
+        <br>
+        <p>…いいえ、先生じゃ ありません。</p>
+        <p>… No, he is not.</p>
+        <br>
+        
+        <p>3) Question with interrogatives</p>
+        <p>An interrogative replaces the part of the sentence that covers what you want to ask about. The word order does not change, and か is added at the end.</p>
+        <p>あの方 (かた）は どなたですか。</p>
+        <p>Who is that man?</p>
+        <p>… [あの 方は] ミラーさんです。</p>
+        <p>… That’s Mr.Miller.</p>
+        <br>
+        </div>
+
+        <div class="grammar-text">
+            <h4>4. N も</h4>
+            <p>も is added after a topic instead of は when the statement about the topic is the same as the previous topic.</p>
+            <p>ミラーさんは 会社員 (かいしゃいん）です。</p>
+            <p>Mr.Miller is a company employee.</p>
+            <p>グプタさんも 会社員です。</p>
+            <p>Mr.Gupta is also a company employee.</p>            
+        </div>
+
+        <div class="grammar-text">
+            <h4> 5. N1 の N2</h4>
+            <p>の is used to connect two nouns. N1 modifies N2 . In Lesson 1, N1 is an organization or some kind of group to which N2 belongs.</p>
+            <p>ミラーさんは IMC の 社員です。</p>
+            <p>Mr.Miller is an IMC employee.</p>
+                        
+        </div>
+
+        <div class="grammar-text">
+            <h4>6. ～さん</h4>
+            <p>さん is added to the name of the listener or a third person to show the speaker’s respect to the person. It should never be used with the speaker’s own name.</p>
+            <p>あの方は ミラーさんです。</p>
+            <p>That’s Mr.Miller.</p>
+            <p>When referring directly to the listener’s name. The listener’s family name followed by さん is usually used.</p>
+            <p>鈴木 ( すずき): ミラーさんは 学生 (がくせい) ですか。</p>
+            <p>Suzuki             :      Are you a student?</p>
+            <p>ミラー     :      いいえ、会社員 (かいしゃいんです。</p>
+            <p>Miller            :       No, I’m a company employee.</p>
+            <p></p>
+                        
+        </div>
+    </div>
+
+    <div class="control">
+        <img src="/images/left.png" id="left-btn">
+        <img src="/images/right.png" id="right-btn">
+    </div>
+</div>

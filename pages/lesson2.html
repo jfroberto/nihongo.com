@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tab</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+    
+    <div class = "tab">
+        <button class = "tablinks" onclick = "window.location.href = '/index.html'" >Back</button>
+        <button class = "tablinks" onclick = "openThis(event,'Vocabulary')">Vocabulary</button>
+        <button class = "tablinks" onclick = "openThis(event,'Grammar')">Grammar</button>
+        <button class = "tablinks" onclick = "openThis(event,'Conversation')">Conversation</button>
+        <button class = "tablinks" onclick = "openThis(event,'Games')">Games</button>
+    </div>
+
+    <div id="Vocabulary" class="tabcontent">
+        <h3>Vocabulary</h3>
+        <iframe width="100%" height="550"" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSBcfhWOg4XWr19xjx4x1PJ0ayatBwJDW8ZEtcmgi9ih557EqyXW3mesfPm0fH_26w6tOYcZPr1dY_t/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"></iframe>   
+ 
+    </div>
+
+    <div id="Grammar" class="tabcontent">
+        <h3>Grammar</h3>
+        <iframe width="100%" height="550" src="https://docs.google.com/document/d/e/2PACX-1vRYYkOAUNG5cU-d03Euaf9ddd1F6Y_ruLxqxbcBJJQxBTRnyPi31NHAu3O-Vk3HRm0FHNThcFVQUSuR/pub?embedded=true"></iframe>
+    </div>
+
+    <div id="Conversation" class="tabcontent">
+        <h3>Conversation</h3>
+        <p>Conversation</p>
+    </div>
+
+    <div id="Games" class="tabcontent">
+        <h3>Games</h3>
+        <button  onclick = "window.location.href = '/game.html'">Button</button>
+        <p>About</p>
+    </div>
+    
+    
+    <script src="app.js"></script>
+
+</body>
+</html>

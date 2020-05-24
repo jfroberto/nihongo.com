@@ -1,0 +1,22 @@
+[{
+    "id":"1",
+    "word":"watashi",
+    "kanji":"wat",
+    "meaning": "I",
+    "audio": "/"
+},
+{
+    "id":"2",
+    "word":"hajimemashita",
+    "kanji":"ha",
+    "meaning": "Hello",
+    "audio": "/sound/1Kaiwa.mp3"
+},
+{
+    "id":"3",
+    "word":"asdas",
+    "kanji":"asdasd",
+    "meaning": "sadasd",
+    "audio": "/sound/1Kaiwa.mp3"
+}
+]
